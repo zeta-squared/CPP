@@ -1,0 +1,6 @@
+What does the following for loop do? What is the final value of sum?
+	int sum = 0;
+	for (int i = -100; i <= 100; ++i)
+		sum += i;
+
+The for loop initialises i as an int type with value -100. It will then increment i by 1 until i reaches 100. At each iteration of the loop we add the value of i to sum. So the for loop sums the digits from -100 to 100 and so the final value is 0.

@@ -1,0 +1,10 @@
+Explain whether the following program fragment is legal.
+	std:: cout << "The sum of " << v1;
+			   << " and " << v2;
+			   << " is " << v1 + v2 << std:endl;
+If the program is legal, what does it do? If the program is not legal, why not? How would you fix it?
+
+The program is not legal as the first line is a terminated statement (since ";" appears at the end of the line). So the second line is using the output operator (<<) but there is no valid left operand. To fix the fragment we need to remove ";" from the end of the first two lines as such,
+	std:: cout << "The sum of " << v1
+			   << " and " << v2
+			   << " is " << v1 + v2 << std:endl;
