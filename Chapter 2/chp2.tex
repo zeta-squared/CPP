@@ -1,0 +1,28 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{algorithms}
+
+\begin{document}
+This document contains all the non-coding exercises of Chapter 2 of C++ Primer.
+\subsubsection*{Exercise 2.1}
+
+The different integer types vary in their minimum bit sizes and so their minimum value range:
+\begin{itemize}
+	\item [\texttt{short}]
+		16 bits gives a value range of -32768 -- 32767.
+	\item [\texttt{int}]
+		16 bits gives a value range of -32768 -- 32767.
+	\item [\texttt{long}]
+		32 bits gives a value range of -2147483648 -- 2147483647.
+	\item [\texttt{long long}]
+		64 bits vies a value range of -9223372036854775808 -- 9223372036854775807.
+\end{itemize}
+
+\texttt{unsigned} types do not include negative values, that is, values $\geq 0$, for example if we consider \texttt{unsigned int} the value range is 0 -- 65536. Of course a \texttt{signed} type takes negative values.
+
+Lastly, both \texttt{float} and \texttt{double} represent decimal precision values. The difference is in the accuracy of precision, a \texttt{float} is precise to 6 significant digits and \texttt{double} is precise to 10 significant digits.
+
+\subsubsection*{Exercise 2.2}
+They should all be \texttt{double} as they all involved decimal figures.
+
+\subsubsection*{Exercise 2.3}
+\end{document}
