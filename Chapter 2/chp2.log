@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  31 JUL 2022 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  31 JUL 2022 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,26 +828,29 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 30.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./chp2.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 137.
+ [4] [5] (./chp2.aux) ) 
 Here is how much of TeX's memory you used:
- 13901 strings out of 478238
- 206416 string characters out of 5850456
+ 13918 strings out of 478238
+ 206611 string characters out of 5850456
  486165 words of memory out of 5000000
- 31894 multiletter control sequences out of 15000+600000
- 485643 words of font info for 62 fonts, out of 8000000 for 9000
+ 31895 multiletter control sequences out of 15000+600000
+ 487464 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,5n,90p,355b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/us
-r/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf-dist/fo
-nts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/share/texmf-dist/fonts/type1/public/t
-ex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></us
-r/share/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texmf-dist/f
-onts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newt
-x/ztmr.pfb>
-Output written on chp2.pdf (3 pages, 91719 bytes).
+ 84i,5n,90p,483b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf
+.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}</usr/share/texm
+f-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/
+public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txtt.p
+fb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-d
+ist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type1/public
+/newtx/ztmri.pfb>
+Output written on chp2.pdf (5 pages, 118597 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

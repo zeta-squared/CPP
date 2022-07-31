@@ -111,4 +111,64 @@ Since \texttt{i} is defined globally and locally, within the block scope its val
 
 \subsubsection*{Exercise 2.14}
 The program is legal since variables can be redefined in an inner scope (here this is the \texttt{for} loop). The program prints \texttt{100 45} since the value of \texttt{sum} is the sum of the numbers 0--9.
+
+\subsubsection*{Exercise 2.15}
+The definition in (b) and (d) are invalid as reference types must be initialised to an object.
+
+\subsubsection*{Exercise 2.16}
+\begin{itemize}
+	\item [(a)]
+		Valid. Assigns the value 3.314159 to \texttt{d}.
+	\item [(b)]
+		Valid. Assigns 0.0 to \texttt{d}.
+	\item [(c)]
+		Valid. Assigns 0 to \texttt{i}.
+	\item [(d)]
+		Valid. Assigns 0 to \texttt{i}.
+\end{itemize}
+
+\subsubsection*{Exercise 2.17}
+This prints \texttt{10 10}.
+
+\subsubsection*{Exercise 2.18}
+See ex218.cpp.
+
+\subsubsection*{Exercise 2.19}
+Pointers and references both ``refer'' to another object. However, references are not objects, that is they are not allocated space in memory and as such they cannot be rebound to another object after initialisation. This also means they \textit{must} be initialised in their definition. A pointer is an object and can refer to several objects over its lifetime since it has memory allocated to it, the address which it stores can be redefined later on.
+
+\subsubsection*{Exercise 2.20}
+\begin{itemize}
+	\item Initialise \texttt{i} to 42.
+	\item Initialise the pointer \texttt{p1} to point to \texttt{i}.
+	\item Assign to \texttt{i} the value \texttt{i * i}
+\end{itemize}
+
+\subsubsection*{Exercise 2.21}
+\begin{itemize}
+	\item [(a)]
+		This is invalid since \texttt{dp} is a \texttt{double} pointer and so cannot point to an \texttt{int}.
+	\item [(b)]
+		Initialises an \texttt{int} pointer to 0, that is, the pointer is a null pointer.
+	\item [(c)]
+		Initialises an \texttt{int} pointer that points to the \texttt{int} object \texttt{i}.
+\end{itemize}
+
+\subsubsection*{Exercise 2.22}
+The first \texttt{if} checks if \texttt{p} is a null pointer or not. If it is not a null pointer it will execute its corresponding block. The second \texttt{if} checks if \texttt{p} points to an \texttt{int} object of value 0 or not. If it points to an object with value non-zero the corresponding block will execute.
+
+\subsubsection*{Exercise 2.23}
+No. If a pointer is uninitialised then it displays undefined behaviour. We do not know if the memory address it stores points to something valid or not.
+
+\subsubsection*{Exercise 2.24}
+We have that \texttt{void*} pointers can point to objects of any type, since their purpose is to point to objects which we do now know their type a priori. However, a pointer of a specified type, for example \texttt{long}, can \textit{only} point to objects of the same type. Hence, initialising a \texttt{long} pointer to an \texttt{int} object will raise an error.
+
+\subsubsection*{Exercise 2.25}
+\begin{itemize}
+	\item [(a)]
+		\texttt{ip} is an \texttt{int} pointer with no value; \texttt{i} is an \texttt{int} with no value; \texttt{r} is an \texttt{int} reference with no value.
+	\item [(b)]
+		\texttt{i} is an \texttt{int} with no value; \texttt{ip} is an \texttt{int} null pointer.
+	\item [(c)]
+		\texttt{ip} is an \texttt{int} pointer with no value; \texttt{ip2} is an \texttt{int} with no value.
+\end{itemize}
 \end{document}
