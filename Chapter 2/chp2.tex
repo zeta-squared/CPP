@@ -25,4 +25,90 @@ Lastly, both \texttt{float} and \texttt{double} represent decimal precision valu
 They should all be \texttt{double} as they all involved decimal figures.
 
 \subsubsection*{Exercise 2.3}
+Assuming the machine is 32 bits for integers the outputs are (in order):
+\begin{itemize}
+	\item 32
+	\item 4294967264
+	\item 32
+	\item -32
+	\item 0
+	\item 0
+\end{itemize}
+
+\subsubsection*{Exercise 2.4}
+See ex24.cpp.
+
+\subsubsection*{Exercise 2.5}
+\begin{itemize}
+	\item [(a)]
+		In order: character literal; wide character literal; string literal; wide character string literal.
+	\item [(b)]
+		In order: integer; unsigned integer; long integer; unsigned long integer; octal integer; hexadecimal integer.
+	\item [(c)]
+		In order: double; float; long double.
+	\item [(d)]
+		In order: integer; unsigned integer; double; double.
+\end{itemize}
+
+\subsubsection*{Exercise 2.6}
+In the first statement the definitions use integer literals so the values are what we expect, that is, \texttt{month = 9} and \texttt{day = 7}. In the second statement we try to define integers using octals however there is an error as 09 is not an octal and will throw an error.
+
+\subsubsection*{Exercise 2.7}
+\begin{itemize}
+	\item [(a)]
+		This is a string literal which represents ``Who goes with Fergus?''
+	\item [(b)]
+		The value is 3.1 and is a long double.
+	\item [(c)]
+		The value is 1024 and is a float.
+	\item [(d)]
+		The value is 3.14 and is a long double.
+\end{itemize}
+
+\subsubsection*{Exercise 2.8}
+See ex28.cpp.
+
+\subsubsection*{Exercise 2.9}
+\begin{itemize}
+	\item [(a)]
+		Cannot use variable before it has been declared. To correct:\\
+		\texttt{int input\_value;}\\
+		\texttt{std::cin >> input\_value;}
+	\item [(b)]
+		Cannot use double in list initialisation since narrowing value may lose data. To correct:\\
+		\texttt{double i = $\{$ 3.14 $\}$;}
+	\item [(c)]
+		Cannot use variable to initialise another variable before it has been initialised. To correct:\\
+		\texttt{double wage = 9999.99;}\\
+		\texttt{double salary = wage;}
+	\item [(d)]
+		This will initialise \texttt{i} to be an \texttt{int} but it will truncate it's value from 3.14 to 3.
+\end{itemize}
+
+\subsubsection*{Exercise 2.10}
+\begin{itemize}
+	\item \texttt{global\_str} will be an empty string.
+	\item \texttt{global\_int} will be 0.
+	\item \texttt{local\_int} will be undefined.
+	\item \texttt{local\_str} will be an empty string.
+\end{itemize}
+
+\subsubsection*{Exercise 2.11}
+\begin{itemize}
+	\item [(a)]
+		This is a definition since the variable is initialised and so memory is allocated for the variable.
+	\item [(b)]
+		This is a definition as the variable is defined locally and so memory is allocated for it.
+	\item [(c)]
+		This is a declaration of a variable as it specifies the variable is external without initialising its value.
+\end{itemize}
+
+\subsubsection*{Exercise 2.12}
+\texttt{double} is a reserved C++ keyword and so is invalid, \texttt{catch-22} does not include valid characters in an identifier and so is invalid and lastly, \texttt{1\_or\_2} is invalid as it begins with a number.
+
+\subsubsection*{Exercise 2.13}
+Since \texttt{i} is defined globally and locally, within the block scope its value is that derived from initialisation within the block. So \texttt{j} will have value 100.
+
+\subsubsection*{Exercise 2.14}
+The program is legal since variables can be redefined in an inner scope (here this is the \texttt{for} loop). The program prints \texttt{100 45} since the value of \texttt{sum} is the sum of the numbers 0--9.
 \end{document}

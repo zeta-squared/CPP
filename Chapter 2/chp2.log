@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  30 JUL 2022 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  31 JUL 2022 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,26 +817,37 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
 
 (/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-) [1
+)
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 30.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chp2.aux) ) 
+(/usr/share/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 30.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./chp2.aux) ) 
 Here is how much of TeX's memory you used:
- 13852 strings out of 478238
- 205669 string characters out of 5850456
- 481165 words of memory out of 5000000
- 31864 multiletter control sequences out of 15000+600000
- 485267 words of font info for 61 fonts, out of 8000000 for 9000
+ 13901 strings out of 478238
+ 206416 string characters out of 5850456
+ 486165 words of memory out of 5000000
+ 31894 multiletter control sequences out of 15000+600000
+ 485643 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,5n,90p,355b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/
-texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/share/texmf-dist/fonts/t
-ype1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/t
-xtt.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/te
-xmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on chp2.pdf (1 page, 75239 bytes).
+ 84i,5n,90p,355b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/us
+r/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf-dist/fo
+nts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/share/texmf-dist/fonts/type1/public/t
+ex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></us
+r/share/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texmf-dist/f
+onts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newt
+x/ztmr.pfb>
+Output written on chp2.pdf (3 pages, 91719 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
