@@ -171,4 +171,78 @@ We have that \texttt{void*} pointers can point to objects of any type, since the
 	\item [(c)]
 		\texttt{ip} is an \texttt{int} pointer with no value; \texttt{ip2} is an \texttt{int} with no value.
 \end{itemize}
+
+\subsubsection*{Exercise 2.26}
+Assuming the definitions are in order of presentation then (b) and (c) are legal and (a) and (d) are illegal. In (a) the issue is that we are defining a \texttt{const} without initialising and in (d) we are trying to iterate a \texttt{const}.
+
+\subsubsection*{Exercise 2.27}
+\begin{itemize}
+	\item [(a)]
+		This is not legal since references cannot be bound to literals and only to objects.
+	\item [(b)]
+		This is legal as \texttt{p2} is a low-level \texttt{const} so as long as \texttt{i2} is an \texttt{int} this is fine.
+	\item [(c)]
+		This is legal as we are able to assign a literal to a reference to \texttt{const}.
+	\item [(d)]
+		This is legal as pointer to \texttt{const} \textit{think} they point to a \texttt{const}. In the event that \texttt{i2} is not a \texttt{const} all this means is that we cannot assign to \texttt{i2} through \texttt{p3}.
+	\item [(e)]
+		This is legal however \texttt{i2} cannot be assigned to through \texttt{p1}.
+	\item [(f)]
+		This is illegal as \texttt{r2} is not initialised. The low-level \texttt{const} here is redundant as references by their nature cannot be rebound after initialisation.
+	\item [(g)]
+		This is legal, however \texttt{i} must be assigned to directly if not already.
+\end{itemize}
+
+\subsubsection*{Exercise 2.28}
+There are errors in (a)--(e). In each of them there is either a \texttt{const} pointer or \texttt{const} variable which is not initialised in its definition. Part (f) is fine and defines a pointer to \texttt{const int}.
+
+\subsubsection*{Exercise 2.29}
+\begin{itemize}
+	\item [(a)]
+		Legal as assignment just copies the value, so you can assign a \texttt{const} variable to a non\texttt{const} variable.
+	\item [(b)]
+		Illegal as \texttt{p3} is a low-level \texttt{const} and \texttt{p1} is not.
+	\item [(c)]
+		Illegal as you cannot use a non\texttt{const} pointer to point to a \texttt{const} variable.
+	\item [(d)]
+		Legal as \texttt{ic} is a \texttt{const} and \texttt{p3} is a pointer to \texttt{const}.
+	\item [(e)]
+		Illegal for the same reason as in part (b).
+	\item [(f)]
+		Legal as the copying a value does not take into consideration whether the objects are both \texttt{const} or not.
+\end{itemize}
+
+\subsubsection*{Exercise 2.30}
+In order of presentation in the text:
+\begin{itemize}
+	\item low-level
+	\item neither
+	\item \texttt{p1} is neither; \texttt{r1} is top-level
+	\item \texttt{p2} is low-level; \texttt{p3} is both; and \texttt{r2} is both.
+\end{itemize}
+
+\subsubsection*{Exercise 2.31}
+In order of presentation in the text:
+\begin{itemize}
+	\item 
+		This is legal as \texttt{r1} is only top-level so the referenced object is not a \texttt{const} and hence can be assigned to.
+	\item 
+		This is illegal as \texttt{p2} is low-level and so can only be assigned to other low-level objects. Otherwise we could assign to a (potentially) \texttt{const} object and create an error.
+	\item 
+		This is legal. Even though \texttt{p2} is low-level and \texttt{p1} is neither, when copying in assignment, the compiler will convert \texttt{p1} temporarily to low-level before continuing with assignment.
+	\item 
+		This is illegal as in the second case.
+	\item 
+		This is legal as both pointers are low-level.
+\end{itemize}
+
+\subsubsection*{Exercise 2.31}
+The code is illegal as the pointer \texttt{p} is initialised with type \texttt{int} instead of \texttt{int*}. Depending on whether the code is intended to initialise \texttt{p} as a \texttt{nullptr} or to point at \texttt{null} the following codes will gives the desired result, respectively,
+\begin{center}
+	\texttt{int null = 0, *p = 0;}
+\end{center}
+or,
+\begin{center}
+	\texttt{int null = 0, *p = \&null;}
+\end{center}
 \end{document}
