@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  7 AUG 2022 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  3 SEP 2022 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,7 +847,7 @@ s/type1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/txfont
 s/txtt.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share
 /texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type
 1/public/newtx/ztmri.pfb>
-Output written on chp2.pdf (7 pages, 123317 bytes).
+Output written on chp2.pdf (7 pages, 123319 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
