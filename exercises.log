@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  18 SEP 2022 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  18 SEP 2022 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,16 +849,18 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 158.
  [5]
 LaTeX Font Info:    Font shape `OT1/ntxtt/b/n' will be
-(Font)              scaled to size 12.0pt on input line 198.
+(Font)              scaled to size 14.4pt on input line 198.
+LaTeX Font Info:    Font shape `OT1/ntxtt/b/n' will be
+(Font)              scaled to size 12.0pt on input line 203.
  [6] [7]
 [8]) [9] (./exercises.aux (./Chapter 1/chapter1.aux) (./Chapter 2/chapter2.aux)
 ) ) 
 Here is how much of TeX's memory you used:
- 14044 strings out of 478238
- 209480 string characters out of 5850456
+ 14051 strings out of 478238
+ 209563 string characters out of 5850456
  486032 words of memory out of 5000000
- 31966 multiletter control sequences out of 15000+600000
- 492896 words of font info for 74 fonts, out of 8000000 for 9000
+ 31970 multiletter control sequences out of 15000+600000
+ 493182 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,5n,90p,562b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/tex
@@ -868,10 +870,10 @@ ublic/tex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txbtt
 f-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><
 /usr/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on exercises.pdf (9 pages, 139341 bytes).
+Output written on exercises.pdf (9 pages, 140213 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 65 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

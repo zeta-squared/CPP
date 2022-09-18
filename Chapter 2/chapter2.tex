@@ -195,7 +195,7 @@ We have that \texttt{void*} pointers can point to objects of any type, since the
 		\texttt{ip} is an \texttt{int} pointer with no value; \texttt{ip2} is an \texttt{int} with no value.
 \end{itemize}
 
-\subsubsection{\texttt{const} Qualifier}
+\subsection{\texttt{const} Qualifier}
 
 \paragraph{Exercise 2.26}
 Assuming the definitions are in order of presentation then (b) and (c) are legal and (a) and (d) are illegal. In (a) the issue is that we are defining a \texttt{const} without initialising and in (d) we are trying to iterate a \texttt{const}.
@@ -278,6 +278,12 @@ or,
 \begin{center}
 	\texttt{int null = 0, *p = \&null;}
 \end{center}
+
+\subsection{Dealing with Types}
+
+\subsubsection{Type Aliases}
+
+\subsubsection{The \texttt{auto} Type Specifier}
 
 \paragraph{Exercise 2.33}
 \begin{itemize}
