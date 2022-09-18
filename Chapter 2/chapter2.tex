@@ -1,44 +1,49 @@
-\documentclass[12pt, a4paper]{article}
-\usepackage{algorithms}
+\section{Chapter 2}
 
-\begin{document}
-This document contains all the non-coding exercises of Chapter 2 of C++ Primer.
-\subsubsection*{Exercise 2.1}
+\subsection{Primitive Built-in Types}
 
-The different integer types vary in their minimum bit sizes and so their minimum value range:
+\subsubsection{Arithmetic Types}
+
+\paragraph{Exercise 2.1} The different integer types vary in their minimum bit sizes and so their minimum value range:
 \begin{itemize}
-	\item [\texttt{short}]
-		16 bits gives a value range of -32768 -- 32767.
-	\item [\texttt{int}]
-		16 bits gives a value range of -32768 -- 32767.
-	\item [\texttt{long}]
-		32 bits gives a value range of -2147483648 -- 2147483647.
-	\item [\texttt{long long}]
-		64 bits vies a value range of -9223372036854775808 -- 9223372036854775807.
+	\item 
+		\texttt{short} -- 16 bits gives a value range of -32768 -- 32767.
+	\item 
+		\texttt{int} -- 16 bits gives a value range of -32768 -- 32767.
+	\item 
+		\texttt{long} -- 32 bits gives a value range of -2147483648 -- 2147483647.
+	\item 
+		\texttt{long long} -- 64 bits vies a value range of -9223372036854775808 -- 9223372036854775807.
 \end{itemize}
 
 \texttt{unsigned} types do not include negative values, that is, values $\geq 0$, for example if we consider \texttt{unsigned int} the value range is 0 -- 65536. Of course a \texttt{signed} type takes negative values.
 
 Lastly, both \texttt{float} and \texttt{double} represent decimal precision values. The difference is in the accuracy of precision, a \texttt{float} is precise to 6 significant digits and \texttt{double} is precise to 10 significant digits.
 
-\subsubsection*{Exercise 2.2}
+\paragraph{Exercise 2.2}
 They should all be \texttt{double} as they all involved decimal figures.
 
-\subsubsection*{Exercise 2.3}
+\subsubsection{Type Conversions}
+
+\paragraph{Exercise 2.3}
 Assuming the machine is 32 bits for integers the outputs are (in order):
 \begin{itemize}
-	\item 32
-	\item 4294967264
-	\item 32
-	\item -32
-	\item 0
-	\item 0
+	\begin{multicols}{2}
+		\item 32
+		\item 4294967264
+		\item 32
+		\item -32
+		\item 0
+		\item 0
+	\end{multicols}
 \end{itemize}
 
-\subsubsection*{Exercise 2.4}
+\paragraph{Exercise 2.4}
 See ex24.cpp.
 
-\subsubsection*{Exercise 2.5}
+\subsubsection{Literals}
+
+\paragraph{Exercise 2.5}
 \begin{itemize}
 	\item [(a)]
 		In order: character literal; wide character literal; string literal; wide character string literal.
@@ -50,10 +55,10 @@ See ex24.cpp.
 		In order: integer; unsigned integer; double; double.
 \end{itemize}
 
-\subsubsection*{Exercise 2.6}
+\paragraph{Exercise 2.6}
 In the first statement the definitions use integer literals so the values are what we expect, that is, \texttt{month = 9} and \texttt{day = 7}. In the second statement we try to define integers using octals however there is an error as 09 is not an octal and will throw an error.
 
-\subsubsection*{Exercise 2.7}
+\paragraph{Exercise 2.7}
 \begin{itemize}
 	\item [(a)]
 		This is a string literal which represents ``Who goes with Fergus?''
@@ -65,10 +70,14 @@ In the first statement the definitions use integer literals so the values are wh
 		The value is 3.14 and is a long double.
 \end{itemize}
 
-\subsubsection*{Exercise 2.8}
+\paragraph{Exercise 2.8}
 See ex28.cpp.
 
-\subsubsection*{Exercise 2.9}
+\subsection{Variables}
+
+\subsubsection{Variable Definitions}
+
+\paragraph{Exercise 2.9}
 \begin{itemize}
 	\item [(a)]
 		Cannot use variable before it has been declared. To correct:\\
@@ -85,7 +94,7 @@ See ex28.cpp.
 		This will initialise \texttt{i} to be an \texttt{int} but it will truncate it's value from 3.14 to 3.
 \end{itemize}
 
-\subsubsection*{Exercise 2.10}
+\paragraph{Exercise 2.10}
 \begin{itemize}
 	\item \texttt{global\_str} will be an empty string.
 	\item \texttt{global\_int} will be 0.
@@ -93,7 +102,9 @@ See ex28.cpp.
 	\item \texttt{local\_str} will be an empty string.
 \end{itemize}
 
-\subsubsection*{Exercise 2.11}
+\subsubsection{Variable Declarations and Definitions}
+
+\paragraph{Exercise 2.11}
 \begin{itemize}
 	\item [(a)]
 		This is a definition since the variable is initialised and so memory is allocated for the variable.
@@ -103,19 +114,27 @@ See ex28.cpp.
 		This is a declaration of a variable as it specifies the variable is external without initialising its value.
 \end{itemize}
 
-\subsubsection*{Exercise 2.12}
+\subsubsection{Identifiers}
+
+\paragraph{Exercise 2.12}
 \texttt{double} is a reserved C++ keyword and so is invalid, \texttt{catch-22} does not include valid characters in an identifier and so is invalid and lastly, \texttt{1\_or\_2} is invalid as it begins with a number.
 
-\subsubsection*{Exercise 2.13}
+\subsubsection{Scope of a Name}
+
+\paragraph{Exercise 2.13}
 Since \texttt{i} is defined globally and locally, within the block scope its value is that derived from initialisation within the block. So \texttt{j} will have value 100.
 
-\subsubsection*{Exercise 2.14}
+\paragraph{Exercise 2.14}
 The program is legal since variables can be redefined in an inner scope (here this is the \texttt{for} loop). The program prints \texttt{100 45} since the value of \texttt{sum} is the sum of the numbers 0--9.
 
-\subsubsection*{Exercise 2.15}
+\subsection{Compound Types}
+
+\subsubsection{References}
+
+\paragraph{Exercise 2.15}
 The definition in (b) and (d) are invalid as reference types must be initialised to an object.
 
-\subsubsection*{Exercise 2.16}
+\paragraph{Exercise 2.16}
 \begin{itemize}
 	\item [(a)]
 		Valid. Assigns the value 3.314159 to \texttt{d}.
@@ -127,23 +146,25 @@ The definition in (b) and (d) are invalid as reference types must be initialised
 		Valid. Assigns 0 to \texttt{i}.
 \end{itemize}
 
-\subsubsection*{Exercise 2.17}
+\paragraph{Exercise 2.17}
 This prints \texttt{10 10}.
 
-\subsubsection*{Exercise 2.18}
+\subsubsection{Pointers}
+
+\paragraph{Exercise 2.18}
 See ex218.cpp.
 
-\subsubsection*{Exercise 2.19}
+\paragraph{Exercise 2.19}
 Pointers and references both ``refer'' to another object. However, references are not objects, that is they are not allocated space in memory and as such they cannot be rebound to another object after initialisation. This also means they \textit{must} be initialised in their definition. A pointer is an object and can refer to several objects over its lifetime since it has memory allocated to it, the address which it stores can be redefined later on.
 
-\subsubsection*{Exercise 2.20}
+\paragraph{Exercise 2.20}
 \begin{itemize}
 	\item Initialise \texttt{i} to 42.
 	\item Initialise the pointer \texttt{p1} to point to \texttt{i}.
 	\item Assign to \texttt{i} the value \texttt{i * i}
 \end{itemize}
 
-\subsubsection*{Exercise 2.21}
+\paragraph{Exercise 2.21}
 \begin{itemize}
 	\item [(a)]
 		This is invalid since \texttt{dp} is a \texttt{double} pointer and so cannot point to an \texttt{int}.
@@ -153,16 +174,18 @@ Pointers and references both ``refer'' to another object. However, references ar
 		Initialises an \texttt{int} pointer that points to the \texttt{int} object \texttt{i}.
 \end{itemize}
 
-\subsubsection*{Exercise 2.22}
+\paragraph{Exercise 2.22}
 The first \texttt{if} checks if \texttt{p} is a null pointer or not. If it is not a null pointer it will execute its corresponding block. The second \texttt{if} checks if \texttt{p} points to an \texttt{int} object of value 0 or not. If it points to an object with value non-zero the corresponding block will execute.
 
-\subsubsection*{Exercise 2.23}
+\paragraph{Exercise 2.23}
 No. If a pointer is uninitialised then it displays undefined behaviour. We do not know if the memory address it stores points to something valid or not.
 
-\subsubsection*{Exercise 2.24}
+\paragraph{Exercise 2.24}
 We have that \texttt{void*} pointers can point to objects of any type, since their purpose is to point to objects which we do now know their type a priori. However, a pointer of a specified type, for example \texttt{long}, can \textit{only} point to objects of the same type. Hence, initialising a \texttt{long} pointer to an \texttt{int} object will raise an error.
 
-\subsubsection*{Exercise 2.25}
+\subsubsection{Understanding Compound Type Declarations}
+
+\paragraph{Exercise 2.25}
 \begin{itemize}
 	\item [(a)]
 		\texttt{ip} is an \texttt{int} pointer with no value; \texttt{i} is an \texttt{int} with no value; \texttt{r} is an \texttt{int} reference with no value.
@@ -172,10 +195,16 @@ We have that \texttt{void*} pointers can point to objects of any type, since the
 		\texttt{ip} is an \texttt{int} pointer with no value; \texttt{ip2} is an \texttt{int} with no value.
 \end{itemize}
 
-\subsubsection*{Exercise 2.26}
+\subsubsection{\texttt{const} Qualifier}
+
+\paragraph{Exercise 2.26}
 Assuming the definitions are in order of presentation then (b) and (c) are legal and (a) and (d) are illegal. In (a) the issue is that we are defining a \texttt{const} without initialising and in (d) we are trying to iterate a \texttt{const}.
 
-\subsubsection*{Exercise 2.27}
+\subsubsection{References to \texttt{const}}
+
+\subsubsection{Pointers to \texttt{const}}
+
+\paragraph{Exercise 2.27}
 \begin{itemize}
 	\item [(a)]
 		This is not legal since references cannot be bound to literals and only to objects.
@@ -193,10 +222,10 @@ Assuming the definitions are in order of presentation then (b) and (c) are legal
 		This is legal, however \texttt{i} must be assigned to directly if not already.
 \end{itemize}
 
-\subsubsection*{Exercise 2.28}
+\paragraph{Exercise 2.28}
 There are errors in (a)--(e). In each of them there is either a \texttt{const} pointer or \texttt{const} variable which is not initialised in its definition. Part (f) is fine and defines a pointer to \texttt{const int}.
 
-\subsubsection*{Exercise 2.29}
+\paragraph{Exercise 2.29}
 \begin{itemize}
 	\item [(a)]
 		Legal as assignment just copies the value, so you can assign a \texttt{const} variable to a non\texttt{const} variable.
@@ -212,7 +241,9 @@ There are errors in (a)--(e). In each of them there is either a \texttt{const} p
 		Legal as the copying a value does not take into consideration whether the objects are both \texttt{const} or not.
 \end{itemize}
 
-\subsubsection*{Exercise 2.30}
+\subsubsection{Top-Level \texttt{const}}
+
+\paragraph{Exercise 2.30}
 In order of presentation in the text:
 \begin{itemize}
 	\item low-level
@@ -221,7 +252,7 @@ In order of presentation in the text:
 	\item \texttt{p2} is low-level; \texttt{p3} is both; and \texttt{r2} is both.
 \end{itemize}
 
-\subsubsection*{Exercise 2.31}
+\paragraph{Exercise 2.31}
 In order of presentation in the text:
 \begin{itemize}
 	\item 
@@ -236,7 +267,9 @@ In order of presentation in the text:
 		This is legal as both pointers are low-level.
 \end{itemize}
 
-\subsubsection*{Exercise 2.32}
+\subsubsection{\texttt{constexpr} and Constant Expressions}
+
+\paragraph{Exercise 2.32}
 The code is illegal as the pointer \texttt{p} is initialised with type \texttt{int} instead of \texttt{int*}. Depending on whether the code is intended to initialise \texttt{p} as a \texttt{nullptr} or to point at \texttt{null} the following codes will gives the desired result, respectively,
 \begin{center}
 	\texttt{int null = 0, *p = 0;}
@@ -245,4 +278,27 @@ or,
 \begin{center}
 	\texttt{int null = 0, *p = \&null;}
 \end{center}
-\end{document}
+
+\paragraph{Exercise 2.33}
+\begin{itemize}
+	\item 
+		\texttt{a}, \texttt{b} and \texttt{c} are of type \texttt{int} and so will be set to the value of 42.
+	\item 
+		\texttt{d} is of type \texttt{int} pointer and so cannot be assigned a literal.
+	\item 
+		\texttt{e} is of type \texttt{const int} pointer and so cannot be assigned a literal.
+	\item 
+		\texttt{g} is of type \texttt{reference} and cannot be assigned after initialisation.
+\end{itemize}
+
+\paragraph{Exercise 2.34}
+See ex234.cpp
+
+\paragraph{Exercise 2.35}
+The code given is:
+\begin{flushleft}
+		\texttt{const int i = 42;}\\
+		\texttt{auto j = i; const auto \&k = i; auto *p = \&i;}\\
+		\texttt{const auto j2 = i, \&k2 = i;}
+\end{flushleft}
+In order we have; \texttt{i} is of type \texttt{const int}; \texttt{j} is of type \texttt{int}; \texttt{k} is of type \texttt{const int}; \texttt{p} is of type pointer to \texttt{const int}; \texttt{j2} is of type \texttt{const int}; and \texttt{k2} is of type reference to \texttt{const int}. See the file ex235.cpp for the code portion of this exercise.
